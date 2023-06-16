@@ -1,7 +1,7 @@
 {
     'name': 'Adev Firebase',
     'version': '1.0',
-    'description': 'This module allows you to send notifications from Odoo to users',
+    'description': 'This module allows you to send firebase notifications from Odoo to users',
     'summary': 'Send notifications from Odoo',
     'author': 'adev',
     'sequence': 5,
@@ -20,5 +20,8 @@
     ],
 
     'application': True,
+    'price': 19.99,  
+    'currency': 'EUR',  
+    'support': 'adilelkhalloufi@gmail.com', 
  
 }
