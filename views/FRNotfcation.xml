@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_adev_firebase_form" model="ir.ui.view">
+        <field name="name">adev.firebase.form</field>
+        <field name="model">adev.firebase</field>
+        <field name="arch" type="xml">
+            <form>
+            
+                <sheet>
+                         <group>
+                           <group>
+                                <field name="name"></field>
+                                <field name="title"></field>
+                                <field name="body"></field>                           
+                             </group>
+                             <group>
+                                 <field name="listfields" widget="selection"></field>
+                            </group>
+                        </group>
+                       
+                </sheet>
+ 
+            </form>
+        </field>
+    </record>
+    <record id="view_adev_firebase_tree" model="ir.ui.view">
+        <field name="name">adev.firebase.tree</field>
+        <field name="model">adev.firebase</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>     
+                <field name="title" />     
+                <field name="body"  />     
+              
+            </tree>
+        </field>
+    </record>
+  
+    <record id="action_adev_firebase" model="ir.actions.act_window">
+            <field name="name">Firebase</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">adev.firebase</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context"></field>
+    </record>
+
+
+
+    <menuitem   
+    id="menu_adev_firebase"
+    name="Create Notfcation"
+    parent="menu_adev_notfcations"
+    action="action_adev_firebase"
+    sequence="10"
+    />
+</odoo>

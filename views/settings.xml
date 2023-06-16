@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_adev_settings_form" model="ir.ui.view">
+        <field name="name">adev.settings.form</field>
+        <field name="model">adev.settings</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                         <group>
+                            <field name="name"></field>
+                            <field name="server_token"></field>
+                        </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_adev_settings_tree" model="ir.ui.view">
+        <field name="name">adev.settings.tree</field>
+        <field name="model">adev.settings</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"></field>
+                <field name="server_token"></field>
+            </tree>
+        </field>
+    </record>
+  
+    <record id="action_adev_settings" model="ir.actions.act_window">
+            <field name="name">Firebase</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">adev.settings</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context"></field>
+    </record>
+
+
+
+    <menuitem   
+    id="menu_adev_settings"
+    name="Firebase Settings"
+    parent="menu_adev_notfcations"
+    action="action_adev_settings"
+    sequence="10"
+    />
+</odoo>

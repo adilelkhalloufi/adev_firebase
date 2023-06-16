@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem
+        id="menu_adev_root"
+        name="Firebase"
+        sequence="10"/>
+    <menuitem
+    id="menu_adev_notfcations"
+    name="Notfcations"
+    parent="menu_adev_root"
+    sequence="12"/>    
+    
+
+  
+
+    
+
+</odoo>
+ 
