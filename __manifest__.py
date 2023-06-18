@@ -12,10 +12,12 @@
     ],
     'data': [
         'security/ir.model.access.csv',
+        
         'views/menu.xml',
         'views/FRNotfcation.xml',
         'views/Notif_res_partner_view.xml',
         'views/settings.xml'
+
      
     ],
 
