@@ -1,4 +1,4 @@
-# Sending Notifications from Odoo to Clients using Firebase AdevFireBase
+# Sending Notifications from Odoo to Clients using Firebase AdevFireBase fOR ANDRIOD AND IOS
 This module allows you to send notifications from Odoo to users
 
 this is youtube video explain Module
